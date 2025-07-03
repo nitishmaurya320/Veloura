@@ -116,8 +116,8 @@ const ProductDetails = ({productId}) => {
                     })
                 }
                 </div>
-                <div className='w-full border-blue-600  h-full'>
-                        <img className='rounded-lg h-full object-cover' src={selectedProduct.product.images[`${currentProduct}`]?.url} alt="Main product    "/>
+                <div className='w-full flex  border-blue-600 h-[500px]  md:h-[500px]'>
+                        <img className='rounded-lg w-full h-full object-cover' src={selectedProduct.product.images[`${currentProduct}`]?.url} alt="Main product    "/>
                  </div>
 
             </div>

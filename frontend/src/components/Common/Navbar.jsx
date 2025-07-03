@@ -46,7 +46,7 @@ const Navbar = () => {
             menuItems.map((item,index)=>{
               return (
                
-                  <Link to={item.path} onClick={()=>handleMenubar(false)}  className='hover:text-blue-800' key={index}    >
+                  <Link to={item.path}   className='hover:text-blue-800' key={index}    >
                   <li  className='text-white menu text-2xl hover:text-yellow-200'>
                     {item.name}
                   </li>
