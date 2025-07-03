@@ -72,7 +72,7 @@ const Navbar = () => {
             <button onClick={()=>setCartDrawer(true)} >
               <HiOutlineShoppingBag className='text-2xl text-white' />
               {cartItemCount>0&&(
-              <span className='absolute top-[50px] text-1xl px-2 rounded-full cursor-pointer bg-red-500 text-white   '>{cartItemCount}</span>
+              <span className='absolute top-[40px] md:top-[50px] text-1xl px-2 rounded-full cursor-pointer bg-red-500 text-white   '>{cartItemCount}</span>
   
               )}
             </button>

@@ -22,9 +22,9 @@ const Cartcontents = ({cart,userId,guestId}) => {
     <div>
       {
         cart.products.map((product,index)=>(
-            <div key={index} className='flex w-full md:h-[90px]   p-1 border-gray-400 border justify-between mb-2'>
+            <div key={index} className='flex w-full md:h-[90px] rounded   p-1 border-gray-400 border justify-between mb-2'>
                 <div className='w-[20%]    flex justify-center items-center ml-2 '>
-                    <img  className='object-cover md:h-full h-[50px] w-full border object-top border-gray-400 rounded-md' src={product.image}/>
+                    <img  className='object-cover md:h-full h-[50px] w-full border object-top border-gray-200 rounded-md' src={product.image}/>
                 </div>
                 <div className='flex flex-col ml-4  w-[60%]'>
                 <h3 className='font-normal text-[15px]  truncate'>{product.name}</h3>
@@ -40,7 +40,8 @@ const Cartcontents = ({cart,userId,guestId}) => {
                 </div>
                 </div>
                 <div className=' w-[20%] flex flex-col items-end px-2'>
-                    <p className='text-1xl'>₹{product.price}</p>
+                    <p
+                     className='text-1xl'>₹{product.price}</p>
                     <MdDeleteForever onClick={()=>{handleRemoveFromCart(product.productId,product.size,product.color)}} className='text-3xl cursor-pointer text-red-500 mt-2'/>
                 </div>
 

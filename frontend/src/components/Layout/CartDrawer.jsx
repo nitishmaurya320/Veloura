@@ -15,9 +15,11 @@ const CartDrawer = ({isopen,setCartDrawer}) => {
     const handleCheckout=()=>{
       if(!user){
         navigate("/login?redirect=checkout")
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
       else{
         navigate("/checkout")
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
       
       setTimeout(()=>{

@@ -103,10 +103,10 @@ const ProductDetails = ({productId}) => {
     // ]
     
   return (
-    <div className='max-w-screen mx-auto  md:p-8 p-1'>
+    <div className='max-w-screen mx-auto md:pt-2  md:p-8 '>
         {selectedProduct&&(
-            <div className='md:max-w-[80%]  w-[100%] mx-auto p-4  flex flex-col md:flex-row h-full'>
-            <div className='flex-col-reverse flex  md:flex-row mx-auto md:mx-0 md:w-[40%] w-[90%]   md:space-y-4  gap-2 mt-5 md:mt-0'>
+            <div className='md:max-w-[80%]  w-[100%] mx-auto p-4      flex flex-col md:flex-row h-full'>
+            <div className='flex-col-reverse flex  md:flex-row mx-auto  md:mx-0 md:w-[40%] ml-0 mr-0 w-full  md:space-y-4  md:gap-2 mt-5 md:mt-0'>
                 <div className='  flex flex-row md:flex-col mt-2 gap-2  md:mt-0 mr-0 mb-0'>
                     {
                     selectedProduct.product.images.map((Product,index)=>{
@@ -121,7 +121,7 @@ const ProductDetails = ({productId}) => {
                  </div>
 
             </div>
-            <div className='  w-full md:w-[50%] flex mt-2 md:mt-0 md:ml-5 p-5'>
+            <div className='  w-full md:w-[50%] flex mt-2 md:mt-0 md:ml-5 '>
                     
                     <div>
                         <div className='text-2xl font-semibold text-gray-600'>{selectedProduct.product.name}</div>

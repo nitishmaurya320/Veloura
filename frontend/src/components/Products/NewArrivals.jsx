@@ -53,7 +53,7 @@ const [scrollx,setScrollx] =useState(0);
           <button onClick={handleScrollx} className='text-4xl  rotate-180'><IoChevronForwardCircleOutline/></button>
           <button className=' text-4xl '><IoChevronForwardCircleOutline/></button>
         </div>
-        <div className='container w-[100%] h-[400px] flex mx-auto space-x-5  relative  overflow-x-scroll border-amber-300'>
+        <div className='container w-[100%] h-[400px]  flex mx-auto space-x-5  overflow-y-hidden  overflow-x-scroll '>
           {
             newArrivals.map((product,index)=>{
               return (

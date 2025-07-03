@@ -36,7 +36,7 @@ const Home = () => {
       <Hero/>
       <Gendercollectionsection/>
       <NewArrivals/>
-      <h2 className='text-3xl text-center font-bold mt-4'>Best Seller</h2>
+      <h2 className='text-3xl text-center font-bold mt-5'>Best Seller</h2>
       {bestSellerProduct?(<ProductDetails productId={bestSellerProduct._id} />):(<p>Loading best seller product...</p>)}
       <Features/>
       <FeaturesSection/>
