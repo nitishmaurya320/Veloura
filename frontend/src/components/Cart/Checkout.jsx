@@ -13,7 +13,7 @@
         const navigate=useNavigate()
         const dispatch=useDispatch()
         const {cart,loading,error}=useSelector((state)=>state.cart)
-        console.log(cart)
+        
         const {user}=useSelector((state)=>state.auth)
         const [checkoutId,setCheckoutId]= useState(null)
         const [shippingAddress,setShippingAddress]=useState({

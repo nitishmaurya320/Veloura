@@ -14,7 +14,7 @@ const Signup = () => {
     
         const navigate=useNavigate()
         const location=useLocation()
-        const {user,guestId}=useSelector((state)=>state.auth)
+        const {user,guestId,loading}=useSelector((state)=>state.auth)
          const {cart}=useSelector((state)=>state.cart)
     
          //get redirect parameter and check if its checkout or something 
@@ -37,7 +37,7 @@ const Signup = () => {
     const handleSubmit=(e)=>{
         e.preventDefault()
         dispatch(registerUser({name,email,password}))
-        console.log({name,email,password})
+        
 
     }
     
@@ -60,7 +60,12 @@ const Signup = () => {
         <input className='p-2' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Enter password' type="password"></input>
         </div>
         <div className='flex justify-center'>
-                   <button type="submit" onClick={handleSubmit} className='px-3 py-2 w-full hover:bg-gray-800 bg-black text-white rounded-md' >Sign up</button>
+          {/* {
+            loading?(<p>...</p>):<button type="submit" onClick={handleSubmit} className='px-3 py-2 w-full hover:bg-gray-800 bg-black text-white rounded-md' >Sign up</button>
+
+          } */}.
+                             <button type="submit" onClick={handleSubmit} className='px-3 py-2 w-full hover:bg-gray-800 bg-black text-white rounded-md' >Sign up</button>
+
         </div>
         <div className=' place-items-center'>
           <p className='mt-5'>Already have an account</p>

@@ -46,11 +46,12 @@ const Navbar = () => {
             menuItems.map((item,index)=>{
               return (
                
-                  <Link to={item.path} className='hover:text-blue-800' key={index}    >
-                  <li className='text-white menu text-2xl hover:text-yellow-200'>
+                  <Link to={item.path} onClick={()=>handleMenubar(false)}  className='hover:text-blue-800' key={index}    >
+                  <li  className='text-white menu text-2xl hover:text-yellow-200'>
                     {item.name}
                   </li>
                   </Link>
+                  
                 
               )
             })
@@ -80,7 +81,7 @@ const Navbar = () => {
         </div>
         <CartDrawer isopen={cartDrawer} setCartDrawer={setCartDrawer}/>
         </div>
-        <div className={`fixed h-screen  top-0 left-0 sm:w-1/2 md:w-1/4 w-3/4 z-1001  transition-transform  duration-100 bg-white ${showMenuBar?"translate-x-0":"translate-x-[-100%]"}`} >
+        <div className={`fixed h-screen  top-0 left-0 sm:w-1/2 md:w-1/4 w-3/5 z-1001  transition-transform  duration-100 bg-white ${showMenuBar?"translate-x-0":"translate-x-[-100%]"}`} >
              <div className=' flex justify-end'>
                      <button className='p-2 ' onClick={()=>handleMenubar(false)}>
                      <IoCloseSharp  className='cursor-pointer text-3xl '/>

@@ -20,7 +20,7 @@ const MyOrders = ({margin}) => {
 
     if(loading) return <p>Loading...</p>
     if(error) return <p>Error {error}</p>
-    console.log(orders)
+    
    
   return (
     <div className={`w-full overflow-y-scroll p-5  md:px-[50px]  h-full  mt-[${margin}px]`}>
