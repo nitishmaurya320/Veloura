@@ -43,8 +43,8 @@ const CollectionPage = ({id,setId}) => {
         </div>
         <div className='w-full md:w-[80%] p-3 relative md:left-[20%] '>
             <div>
-                <div className='text-2xl font-bold mt-5'>ALL COLLECTIONS</div>
-                <div className='flex justify-center items-center gap-2 md:hidden' onClick={handleFilterBar}>
+                <div className='text-2xl font-bold mt-1 md:mt-5'>ALL COLLECTIONS</div>
+                <div className='flex justify-center items-center gap-2 md:hidden text-[15px]' onClick={handleFilterBar}>
                     <IoFilter/>Filter</div>
                     <div className='flex justify-end items-center'>
                         <p className='text-right'>Sort</p>

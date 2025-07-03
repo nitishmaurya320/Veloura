@@ -25,7 +25,7 @@ const ProductsGrid = ({products,loading,error}) => {
                 products.map((product,index)=>{
                         return(
                             <div key={index} className='w-full md:h-[400px]  p-1 hover:shadow-lg cursor-pointer ' onClick={()=>{onProductClick(product._id)}}>
-                                <div><img loading='lazy' className=' w-full h-[200px] md:h-[320px] md:object-cover  object-top' src={product.images[0].url}/></div>
+                                <div><img loading='lazy' className=' w-full h-[200px] md:h-[320px]  object-cover  object-top' src={product.images[0].url}/></div>
                                 <div className='p-2'>
                                     <h3 className='text-[13px] truncate'>{product.name}</h3>
                                     <p>₹{product.price}</p>

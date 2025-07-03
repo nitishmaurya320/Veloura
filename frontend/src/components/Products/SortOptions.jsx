@@ -11,8 +11,8 @@ const SortOptions = () => {
   }
   return (
     <div  className='flex items-center justify-center'>
-      <select id="sort" onChange={handleSortChange} value={searchParams.get("sortBy")||""}>
-        <option value="Default">Default</option>
+      <select id="sort" className='' onChange={handleSortChange} value={searchParams.get("sortBy")||""}>
+        <option className='' value="Default">Default</option>
         <option value="PriceDesc" >Price: High to Low</option>
         <option value="PriceAsc">Price: Low to High</option>
         <option value="Popularity">Popularity</option>
