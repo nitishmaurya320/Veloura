@@ -25,7 +25,7 @@
             country:"",
             phone:"",
         });
-        console.log(cart)
+        
         //ensure cart is loaded before proceeding
         useEffect(()=>{
                 if(!cart||!cart.products||cart.products.length===0){
@@ -103,7 +103,7 @@
         if(!cart||!cart.products||cart.products.length===0){
             return <p>Your cart is empty</p>
         }
-        console.log(checkoutId)
+        
     return (
         <div className='mt-[100px] h-full    '>
             {/* {left} */}

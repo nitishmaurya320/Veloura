@@ -39,6 +39,8 @@ const Signup = () => {
         e.preventDefault()
         if(password.length<=5){
           toast.error("The password must contain at least 6 characters,")
+          state.loading=false
+          
         }
         dispatch(registerUser({name,email,password}))
         
