@@ -67,7 +67,7 @@ const Footer = () => {
         
       </div>
       <div className='flex justify-center mt-12 px:4 pt-6 border-t border-gray-400'>
-        <p>© 2025, Bazzarx All Rights Reserved</p>
+        <p>© 2025, Veloura All Rights Reserved</p>
       </div>
     </div>
   )
